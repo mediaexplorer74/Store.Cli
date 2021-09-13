@@ -29,7 +29,22 @@ Run Store.Cli.exe to start this console app from Command line interface (please 
 .NET 4.8 FrameWork installed
 
 
-There are also a couple DOCs which explains miscellaneous functionality. =)
+# Solution Layout
+Projects have a README.MD which expands on the internal functionality and layout of that project. 
+
+
+A brief summary of each project is as follows:
+- **[Store.Cli](./Store.Cli/)** - The main part (frontend) with store "CLI" commands realization
+  - All components are integrated into this project
+  - This has StoreLib reference
+- **[StoreLib](./StoreLib/)** - Library for MS Store connection
+  - search packages
+  - make package urls for direct downloading
+  - some cool helpers (i.e., app screnshots' url getter)
+- **[StoreLib.Tests](./StoreLib.Tests/)** - "Background" (tests)
+  - FE3 tests (contains some useful things to research!)
+  - DisplayCatalog tests
+
 
 With best wishes,
 
